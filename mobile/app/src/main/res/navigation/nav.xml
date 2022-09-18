@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.android.example.mobile.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_camera"
+            app:destination="@id/cameraActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="com.android.example.mobile.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
+
+</navigation>
